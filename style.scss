@@ -1,2 +1,52 @@
-@import "bootstrap-icons/font/bootstap-icons.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+@import "bootstrap-icons/font/bootstrap-icons.css";
+@import "animate.css/animate.min.css";
+
+
+$font-family-sans-serif : 'Montserrat', sans-serif;
+
+$primary:#198754;
+
+$navbar-nav-link-padding-x: 1.5rem;
+
+$btn-font-size-lg: 1rem;
+$btn-padding-x-lg: .75rem;
+$btn-padding-y-lg: .50rem;
+
+
 @import "bootstrap/scss/bootstrap";
+
+.nav-link.active{
+  color:white !important;
+}
+
+.brand-icon{
+  position: 40px;
+  transition: 0.5s;
+}
+
+.site-nav{
+  &:hover .brand-icon{
+    transform: rotate(360deg);
+  }
+  &:hover .nav-link.active{
+    transform: translateY(-3px);
+  }
+} 
+
+.menuStyle{
+  transition: 0.3s;
+
+  img{
+    transition: 0.3s;
+  }
+  
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: $box-shadow;
+  }
+
+  &:hover img{
+    transform: rotate(360deg);
+  }
+} 
